@@ -1,0 +1,24 @@
+
+.loading {
+	position: absolute;
+	-webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+	font-size: 60px;
+  }
+  .loading span {
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	animation: loading 1s infinite;
+	animation-delay: calc(.1s * var(--i));
+	
+  }
+  @keyframes loading {
+	0%,40%,100% {
+	  transform: translateY(0)
+	}
+	20% {
+	  transform: translateY(-20px)
+	}
+  }
+

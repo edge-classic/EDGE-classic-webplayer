@@ -1,0 +1,53 @@
+.header {
+	display: flex;
+	justify-content: center;
+	width: 100%;	
+	flex-basis: 64px;
+	background: #333;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.header a.logo {
+	display: flex;
+	align-items: center;
+	padding: 0.5rem 1rem;
+}
+
+.logo img {
+	padding: 0 0.5rem;
+	font-size: 1.5rem;
+}
+
+.logo:hover {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+nav {
+	display: flex;	
+	width: 100%;
+	max-width:1440px;
+	
+	justify-content: space-between;	
+}
+
+nav {
+	display: flex;
+	width:100%;
+}
+
+nav a {
+	display: flex;
+	
+	align-items: center;
+}
+
+nav a:hover {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+
+nav img {
+	padding: 0.5rem 1rem;
+	display: flex;	
+}
