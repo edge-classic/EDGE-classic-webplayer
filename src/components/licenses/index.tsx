@@ -21,35 +21,38 @@ const LicenseModal: FunctionComponent<{ onClose: () => void }> = ({ onClose }) =
 );
 
 const license = `===========================================================================================
-BSD 2-Clause License
-===========================================================================================
-
-miniz library (gzip support) - Copyright (c) 2015 Wojciech Adam Koszek
-
-===========================================================================================
 BSD 3-Clause License
 ===========================================================================================
 
-Blasphemer (various assets) - Copyright (c) 2021 Contributors to the Blasphemer project
+"16-Bit Game Station" soundfont (select melodic instruments)
+  Copyright (c) 2009 Beatnik, Inc
 
-FMMIDI library - Copyright (c) 2003-2006 yuno
+ANGLE (Almost Native Graphics Layer Engine) - Copyright (c) 2018 Google Inc. and ANGLE Project Authors
+
+AlmostEquals Google Test Framework Component - Copyright (c) 2005 Google, Inc.
+
+Blasphemer (various assets) - Copyright (c) 2021 Contributors to the Blasphemer project
 
 Freedoom (various assets) - Copyright (c) 2001-2019 Contributors to the Freedoom project
 
-YMFM library - Copyright (c) 2021 Aaron Giles
+"FDDMX" instrument bank - Copyright (c) 2023 Contributors to the Freedoom project
+  Copyright (c) ConSiGno ("DMXOPL" instrument bank which formed the basis for FDDMX)
 
-YMFMIDI library - Copyright (c) 2021-2022 Devin Acker
+libRAD (patches.cpp/radmidi.cpp, adapted from YMFMIDI) - Copyright (c) 2021-2023 Devin Acker
 
-Mod4Play library - Copyright (c) 2022 Olav Sørensen
+Mod4Play library - Copyright (c) 2024 dashodanger
+  Copyright (c) 2022 Olav Sørensen
 
 minivorbis library - Copyright (c) 2020 Eduardo Bart
-                     Copyright (c) 2002-2020 Xiph.org Foundation
+  Copyright (c) 2002-2020 Xiph.org Foundation
+
+ZDoom FName implementation - Copyright (c) 2005-2007 Randy Heit
 
 ===========================================================================================
 CC 1.0 Universal License
 ===========================================================================================
 
-minimp3 library - lieff
+HandmadeMath.h - Ben Visness
 
 "ProtoSquare!" soundfont - Yingchun Soul
 
@@ -69,82 +72,110 @@ REKKR (various assets) - Copyright (c) 2021 Mockingbird Softworks
 CC-BY-SA-4.0 International License
 ===========================================================================================
 
-"Bonkers for Bits" soundfont - Copyright (c) Marcel J. Therrien
-
-"DMXOPL" and "DMXPOL3" instrument banks - Copyright (c) ConSiGno
+"ChipFreak" soundfont - Copyright (c) Jayvee Enaguas
 
 ===========================================================================================
-GPL2 License
+GPL3 License
 ===========================================================================================
 
-"Adplug" instrument bank - Copyright (C) 1999, 2000, 2001 Simon Peter, et al.
+"Apogee" instrument bank - Melodic instruments Copyright (C) 1994-1995 Apogee Software, Ltd.
+	Percussion instruments Copyright (C) 1999, 2000, 2001 Simon Peter, et al.
 
 AJBSP - Copyright (c) 2000-2023 Andrew Apted, et al
-        Copyright (c) 1994-1998 Colin Reed
-        Copyright (c) 1997-1998 Lee Killough
+	Copyright (c) 1994-1998 Colin Reed
+	Copyright (c) 1997-1998 Lee Killough
 
-COAL -  Copyright (c) 2009-2023 Andrew Apted, et al
-        Copyright (c) 1996-1997 Id Software, Inc.
+COAL - Copyright (c) 2021-2024 The EDGE Team
+	Copyright (c) 2009-2021 Andrew Apted, et al
+  Copyright (c) 1996-1997 Id Software, Inc.
 
-DDF library - Copyright (c) 1999-2023 The EDGE Team
+DDF library - Copyright (c) 1999-2024 The EDGE Team
 
-DEHACKED library (formerly DEH_EDGE) - Copyright (c) 2004-2023 The EDGE Team
+DEH_EDGE library - Copyright (c) 2004-2024 The EDGE Team
 
-EC_VOXELIB library - Copyright (c) 2022-2023 The EDGE Team
+EDGE-Classic - Copyright (c) 1999-2024 The EDGE Team
 
-EDGE-Classic - Copyright (c) 1999-2023 The EDGE Team
+EPI library - Copyright (c) 2002-2024 The EDGE Team
 
-EPI library - Copyright (c) 2002-2023 The EDGE Team
+Fluidlite - Copyright (c) 2016 Robin Lobel
 
-Fluidlite library - Copyright (c) 2016 Robin Lobel
-
-Game Music Emu - Copyright (c) 2003-2009 Shay Green
+SLADE (IMF->WAV conversion and sky drawing routines) - Copyright (c) 2008 - 2023 Simon Judd
 
 SuperFastHash - Copyright (c) 2004-2010 Paul Hsieh
 
-XMIDI library - Copyright (c) 2015-2022 Vitaly Novichkov
-                Copyright (c) 2015-2016 WildMIDI Developers
-                Copyright (c) 2014 Bret Curtis
-                Copyright (c) 2001 Ryan Nunn
+XMIDI library (MIDI conversion) - Copyright (c) 2015-2022 Vitaly Novichkov
+	Copyright (c) 2015-2016 WildMIDI Developers
+	Copyright (c) 2014 Bret Curtis
+	Copyright (c) 2001 Ryan Nunn
+
+===========================================================================================
+HacX License
+===========================================================================================
+
+HacX 1.2/2.0 (various assets) - Copyright (c) 1997-2012 Banjo Software, et al
 
 ===========================================================================================
 MIT License
 ===========================================================================================
 
-"16-Bit Game Station" soundfont - Copyright (c) 2022 Yingchun Soul
+3dreamEngine Lua Math Libraries - Copyright (c) 2019 Luke100000 
+
+"16-Bit Game Station" soundfont (percussion and select melodic instruments) - Copyright (c) 2022 Yingchun Soul
+
+base64.lua - Copyright (c) 2018 Ilya Kolbin 
 
 BW_Midi_Sequencer library - Copyright (c) 2015-2022 Vitaly Novichkov
 
+"C++ implementation of a fast Gaussian blur algorithm by Ivan Kutskir - Integer Version"
+	Copyright (C) 2017 Basile Fraboni
+	Copyright (C) 2014 Ivan Kutskir
+
+debugger.lua -Copyright (c) 2023 Scott Lembcke and Howling Moon Software
+
 gl4es library - Copyright (c) 2016-2018 Sebastien Chevalier
-				Copyright (c) 2013-2016 Ryan Hileman
+	Copyright (c) 2013-2016 Ryan Hileman
 
 glad library - Copyright (c) 2013-2022 David Herberth
 
+json.lua - Copyright (c) 2020 rxi
+
+Lua - Copyright (C) 1994-2023 Lua.org, PUC-Rio.
+
 miniz library - Copyright (c) 2013-2014 RAD Game Tools and Valve Software
-				Copyright (c) 2010-2014 Rich Geldreich and Tenacious Software LLC
+	Copyright (c) 2010-2014 Rich Geldreich and Tenacious Software LLC
+
+PL_MPEG library - Copyright(c) 2019 Dominic Szablewski
 
 PNPOLY algorithm - Copyright (c) 1970-2003 Wm. Randolph Franklin
 
-"WadSmoosh" instrument bank - Copyright (c) 2016-2020 JP LeBreton
-
-"C++ implementation of a fast Gaussian blur algorithm by Ivan Kutskir - Integer Version"
-    - Copyright (C) 2017 Basile Fraboni
-    - Copyright (C) 2014 Ivan Kutskir
-
+utf8proc library - Copyright (c) 2014-2021 Steven G. Johnson, Jiahao Chen, Tony Kelman, 
+	Jonas Fonseca, et al
 
 ===========================================================================================
 Public Domain
 ===========================================================================================
 
+dr_wav, dr_mp3, and dr_flac libraries - David Reid
+
 Fraction.hpp - Bisqwit
 
-"GMGSx" soundfont (renamed to default.sf2) - Kenneth Rundt
+libRAD (opal.cpp/radplay.cpp) - Reality Productions
 
-dr_wav and dr_flac libraries - David Reid
+"sf_GMbank" soundfont (renamed to Default.sf2) - The Csound Developers
 
 stb_image, stb_image_write, stb_rect_pack and stb_truetype libraries - Sean Barrett
 
-"Unicode Processing with C++0x" Conversion Classes - Andrew Choi
+===========================================================================================
+SIL Open Font License
+===========================================================================================
+
+Fira Code (renamed to ECFONT02.ttf) - Copyright 2014-2020 The Fira Code Project Authors
+
+Germania One (renamed to ECFONT03.ttf) - Copyright (c) 2011, John Vargas Beltrán,
+	with Reserved Font Name "Germania One"
+
+Russo One (renamed to ECFONT01.ttf) - Copyright (c) 2011-2012, Jovanny Lemonad,
+	with Reserved Font Name "Russo"
 
 ===========================================================================================
 WidePix License
@@ -153,14 +184,10 @@ WidePix License
 WidePix (various assets) - Copyright (c) 2020-2021 Nash Muhandes
 
 ===========================================================================================
-WTF License
-===========================================================================================
-
-crsid library - Copyright (c) 2022 Hermit (Mihaly Horvath)
-
-===========================================================================================
 zlib License
 ===========================================================================================
+
+LOVE2D (Windows swapbuffers code) - Copyright (c) 2006-2024 LOVE Development Team
 
 SDL2 library - Copyright (c) 1997-2020 Sam Lantinga
 `

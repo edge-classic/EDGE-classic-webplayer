@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 import createEdgeModule from '../../edge-classic';
 import LicenseModal from '../licenses';
 
-const defaultIWad = "freedoom2.wad"
-const deathmatchIWad = "freedm.wad";
+const defaultDoomIWad = "/freedoom2.wad"
+const defaultHereticIWad = "/blasphem.wad";
 
 type PlayerConfig = {
 	indexDBName: string;
@@ -217,14 +217,14 @@ const WadChooser = () => {
 
 					<div style={{ display: "flex", alignItems: "center" }}>
 						<button style="font-size:18px;width:292px;height:48px;padding:12px" onClick={() => {
-							WadHandler.singleton.setWads([{ wadName: defaultIWad, isIWAD: true }])
-						}}>Play Freedoom</button>
+							WadHandler.singleton.setWads([{ wadName: defaultDoomIWad, isIWAD: true }])
+						}}>Play Freedoom 2</button>
 					</div>
 					<div style={{ paddingTop: 24 }} />
 					<div style={{ display: "flex", alignItems: "center" }}>
 						<button style="font-size:18px;width:292px;height:48px;padding:12px" onClick={() => {
-							WadHandler.singleton.setWads([{ wadName: deathmatchIWad, isIWAD: true }])
-						}}>Play Bot Death Match</button>
+							WadHandler.singleton.setWads([{ wadName: defaultHereticIWad, isIWAD: true }])
+						}}>Play Blasphemer</button>
 					</div>
 					<div style={{ paddingTop: 24 }} />
 					<div style={{ display: "flex", alignItems: "center" }}>
@@ -325,15 +325,15 @@ const EdgeClassic = () => {
 		let iwad = wadState?.find(w => w.isIWAD);
 
 		if (!iwad) {
-			iwad = { wadName: defaultIWad, isIWAD: true };
+			iwad = { wadName: defaultDoomIWad, isIWAD: true };
 		}
 		
 		console.log("WadState", wadState);
 
 		/*
-		let iwad = defaultIWad;
-		if (wadState.wadName === deathmatchIWad) {
-			iwad = deathmatchIWad;
+		let iwad = defaultDoomIWad;
+		if (wadState.wadName === defaultHereticIWad) {
+			iwad = defaultHereticIWad;
 		}
 
 		if (wadState.wadName !== iwad && wadState.isIWAD) {
@@ -385,7 +385,7 @@ const EdgeClassic = () => {
 		canvas.addEventListener("webglcontextlost", function (e) { alert('FIXME: WebGL context lost, please reload the page'); e.preventDefault(); }, false);
 
 		let iwadPath = iwad.wadName!;
-		if (iwadPath !== defaultIWad && iwadPath !== deathmatchIWad) {
+		if (iwadPath !== defaultDoomIWad && iwadPath !== defaultHereticIWad) {
 			iwadPath = `edge-classic/${iwadPath}`;
 		}
 
@@ -400,11 +400,7 @@ const EdgeClassic = () => {
 		})
 
 		let customCommandLine = getCookie("customCommandLineCookie");
-		if (!customCommandLine?.length) {
-			if (iwad.wadName === deathmatchIWad) {
-				args.push(...["-deathmatch", "1", "-nomonsters", "-skill", "2", "-bots", "1", "-warp", "map03"])
-			}
-		} else {
+		if (customCommandLine?.length) {
 			args.push(...customCommandLine.split(" "));
 		}
 
