@@ -1,7 +1,7 @@
 import { FunctionComponent, h } from 'preact';
 import style from './style.css';
 
-const LicenseModal: FunctionComponent<{ onClose: () => void }> = ({ onClose }) => (
+const LicenseModal = ({ onClose }) => (
     <div id="myModal" class={style.modal}>
         <div class={style.modal_content}>
             <div class={style.modal_header}>
